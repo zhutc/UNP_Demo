@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E4D125219677E2006EBD64 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 00E4D124219677E2006EBD64 /* main.c */; };
+		00E4D12E21967E40006EBD64 /* DayTimeServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 00E4D12C21967E40006EBD64 /* DayTimeServer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		00E4D121219677E2006EBD64 /* DayTimeService */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DayTimeService; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E4D124219677E2006EBD64 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		00E4D12C21967E40006EBD64 /* DayTimeServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DayTimeServer.c; sourceTree = "<group>"; };
+		00E4D12D21967E40006EBD64 /* DayTimeServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayTimeServer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		00E4D123219677E2006EBD64 /* DayTimeService */ = {
 			isa = PBXGroup;
 			children = (
+				00E4D12B21967E1A006EBD64 /* src */,
 				00E4D124219677E2006EBD64 /* main.c */,
 			);
 			path = DayTimeService;
+			sourceTree = "<group>";
+		};
+		00E4D12B21967E1A006EBD64 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				00E4D12D21967E40006EBD64 /* DayTimeServer.h */,
+				00E4D12C21967E40006EBD64 /* DayTimeServer.c */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E4D12E21967E40006EBD64 /* DayTimeServer.c in Sources */,
 				00E4D125219677E2006EBD64 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

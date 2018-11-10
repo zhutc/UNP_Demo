@@ -37,7 +37,7 @@ void startDayTimeServer(void)
     // config ip port
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = htonl(INADDR_ANY);
-    serverAddress.sin_port = htons(1234);
+    serverAddress.sin_port = htons(12345);
     
     if (bind(listenFD, (struct sockaddr *)&serverAddress, sizeof(serverAddress)) < 0) {
         printf("Bind Socket Error");
@@ -54,7 +54,7 @@ void startDayTimeServer(void)
         connectFD = accept(listenFD, NULL, NULL);
         if (connectFD < 0) {
             printf("Accept Error");
-            return;
+//            return;
         }
         ticks = time(NULL);
         snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));
@@ -64,9 +64,13 @@ void startDayTimeServer(void)
         size_t writeLength = write(connectFD, buff, length);
         if (length != writeLength) {
             printf("Write Error!!");
-            return;
+//            return;
         }
-        
+        write(connectFD, "12345", 5);
+        if (close(connectFD) == -1) {
+            printf("Close Error!");
+            break;
+        }
     } while (1);
     
     

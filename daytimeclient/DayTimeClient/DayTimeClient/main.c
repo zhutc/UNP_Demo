@@ -7,9 +7,8 @@
 //
 
 #include <stdio.h>
-
+#include "DayTimeClient.h"
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    startRequestTime("192.168.31.133", 12345);
     return 0;
 }

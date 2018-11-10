@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2081C22C21967A9D00E3E5F5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2081C22B21967A9D00E3E5F5 /* main.c */; };
+		2081C2352196897A00E3E5F5 /* DayTimeClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 2081C2332196897A00E3E5F5 /* DayTimeClient.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		2081C22821967A9D00E3E5F5 /* DayTimeClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DayTimeClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		2081C22B21967A9D00E3E5F5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2081C2332196897A00E3E5F5 /* DayTimeClient.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DayTimeClient.c; sourceTree = "<group>"; };
+		2081C2342196897A00E3E5F5 /* DayTimeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayTimeClient.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		2081C22A21967A9D00E3E5F5 /* DayTimeClient */ = {
 			isa = PBXGroup;
 			children = (
+				2081C2322196896D00E3E5F5 /* src */,
 				2081C22B21967A9D00E3E5F5 /* main.c */,
 			);
 			path = DayTimeClient;
+			sourceTree = "<group>";
+		};
+		2081C2322196896D00E3E5F5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2081C2332196897A00E3E5F5 /* DayTimeClient.c */,
+				2081C2342196897A00E3E5F5 /* DayTimeClient.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2081C2352196897A00E3E5F5 /* DayTimeClient.c in Sources */,
 				2081C22C21967A9D00E3E5F5 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
